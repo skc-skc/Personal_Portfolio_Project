@@ -1,6 +1,7 @@
 body {
-  background: url(/images/abstract-art-cool.jpg);
+  background: url(/images/abstract-art-warm.jpg);
   /* object-fit: cover; */
+  overflow-x: hidden;
 }
 
 
@@ -35,13 +36,46 @@ body {
   border-radius: 5px;
 }
 
-
-/* ................FOOTER.................... */
-.footer {
-  background-color: #E7EB5D;
+.portfolio__hr {
+  opacity: calc(.1);
+  /* background-color: #E7EB5D; */
 }
 
-.footer li {
+/* .portfolio__img {
+  width: 75%;
+} */
+
+/* @media screen and (min-width: 768px) and (max-width: 991px) {
+  .portfolio__block p {
+    font-size: 13px;
+  }
+} */
+
+.skills__icons {
+  
+}
+
+/* ................CONTACT INFO BLOCK.................... */
+.contact__info__block {
+  background-color: #E7EB5D;
+  border-radius: 5px;
+  /* margin: 100px 200px 0; */
+}
+
+/* .footer li {
   list-style: none;
   margin: 0 10px;
+} */
+
+/* .footer ul {
+  margin-bottom: 0;
+} */
+
+.social__link {
+  font-size:30px;
+  padding: 10px 5px;
+}
+
+.email {
+  font-size: 25px;
 }
