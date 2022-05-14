@@ -9,35 +9,41 @@
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
   <script src="https://kit.fontawesome.com/21149164b3.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
 </head>
 
 <body>
   <!-- ...........NAVBAR................ -->
   <div class="container-fluid top__block">
     <nav class="row nav__block ">
-      <div class="col-4 p-2">
-        <img src="/images/logo.svg" alt="">
-        <h6>Sam Carpenter</h6>
-        <h6>Front End Developer</h6>
+      <div class="col-4 p-2 position-relative">
+        <img class='ms-5 d-none d-md-inline-block logo' src="/images/logo.svg" alt="">
+        <div class="d-inline-block name ms-3">
+          <h5 class="d-md-none mt-5"> Sam Carpenter</h5>
+          <h6 class="d-none d-md-inline-block">Sam Carpenter</h6>
+          <h6 class="d-none d-md-inline-block">Front End Developer</h6>
+        </div>
       </div>
-      <div class="col-4 ms-auto mt-auto">
+      <div class="col-12 offset-4 col-md-4 offset-md-3 offset-lg-4 mt-auto mb-4">
         <ul class="navbar__list">
-          <li><a href="">Portfolio</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Social</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
     <!-- ................HERO................. -->
-    <div class="row hero__block">
+    <!-- <div class="row hero__block">
       <div class="col-4">
         <h1>Welcome!</h1>
         <h3>I'm Sam, a front-end web developer. You can view my work below and find my contact information on the right.</h3>
       </div>
-    </div>
+    </div> -->
   </div>
   <!-- ................PORTFOLIO BLOCK.................... -->
-  <div class="container portfolio__block">
+  <div id='portfolio' class="container portfolio__block">
     <div class="row g-3 g-lg-5 pt-4">
       <div class="col-10 offset-1 col-lg-6 offset-lg-1"><img class='img-fluid rounded' src="/images/carousel.jpg" alt=""></div>
       <div class="col-10 offset-1 offset-lg-0 col-lg-4">
@@ -62,7 +68,7 @@
       </div>
     </div>
     <hr class="d-lg-none portfolio__hr">
-    <div class="row mt-4">
+    <div id='about' class="row mt-4">
       <div class="col-10 offset-1">
         <h3 class="row">
           <div class="col-4">Skills and Experience</div> 
@@ -73,18 +79,21 @@
             <i class="fa-brands fa-bootstrap"></i>
           </div>
         </h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In exercitationem inventore eum, nostrum ullam nemo molestiae dolor quaerat, ab sunt qui magni accusantium numquam velit adipisci quibusdam explicabo? Reiciendis et ab fugit animi inventore. Eius excepturi magni repellendus, officiis vel a at autem debitis, quidem obcaecati expedita tenetur, corrupti reiciendis deleniti. Quis, quae eligendi. Earum nemo optio quasi alias, vero nesciunt id adipisci quo dignissimos consequuntur inventore beatae illum, error neque itaque enim expedita excepturi. Quasi repudiandae enim recusandae ipsam quam cum ab quisquam incidunt maiores necessitatibus autem iste dolor, alias officiis esse consectetur nostrum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, voluptatibus rem repellat labore aperiam voluptatum voluptas magni excepturi nostrum velit omnis adipisci voluptates, repudiandae deleniti!</p>
+        <p class="pb-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In exercitationem inventore eum, nostrum ullam nemo molestiae dolor quaerat, ab sunt qui magni accusantium numquam velit adipisci quibusdam explicabo? Reiciendis et ab fugit animi inventore. Eius excepturi magni repellendus, officiis vel a at autem debitis, quidem obcaecati expedita tenetur, corrupti reiciendis deleniti. Quis, quae eligendi. Earum nemo optio quasi alias, vero nesciunt id adipisci quo dignissimos consequuntur inventore beatae illum, error neque itaque enim expedita excepturi. Quasi repudiandae enim recusandae ipsam quam cum ab quisquam incidunt maiores necessitatibus autem iste dolor, alias officiis esse consectetur nostrum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, voluptatibus rem repellat labore aperiam voluptatum voluptas magni excepturi nostrum velit omnis adipisci voluptates, repudiandae deleniti!</p>
       </div>
     </div>
-    <!-- ..................CONTACT INFO BLOCK......................... -->
-    <div class="row contact__info__block">
-      <div class="col-1 offset-3">
-        <span class="email">samcarpenter725@gmail.com</span>
-      </div>
-      <div class="col-4 offset-3">
+  </div>
+  <!-- ..................CONTACT INFO BLOCK......................... -->
+  <div id='contact' class="container contact__info__block">
+    <div class="row">
+      <p class="email col-12 offset-3 offset-md-4">samcarpenter725@gmail.com</p>
+    </div>
+    <div class="row">
+      <div class="col-12  offset-4 offset-md-5">
         <i class="fa-brands fa-twitter social__link"></i>
         <i class="fa-brands fa-instagram social__link"></i>
-        <i class="fa-brands fa-linkedin social__link"></i></div>
+        <i class="fa-brands fa-linkedin social__link"></i>
+      </div>
     </div>
   </div>
 </body>

@@ -1,7 +1,10 @@
 body {
-  background: url(/images/abstract-art-warm.jpg);
+  background: url(/images/abstract-art-cool.jpg);
   /* object-fit: cover; */
   overflow-x: hidden;
+  background-size: cover;
+  background-position:50% 50%;
+  font-family: 'Montserrat', sans-serif;;
 }
 
 
@@ -17,13 +20,32 @@ body {
   margin: 0 10px;
 }
 
+.navbar__list a:hover {
+  opacity: calc(.5);
+}
+
+
 .top__block {
-  background-color: #E7EB5D;
-  border-radius: 0 0 5px 5px;
+  background-color: white;
+  /* background-color: #E7EB5D; */
+  /* border-radius: 0 0 5px 5px; */
 
   /* height: 500px; */
 }
 
+.name {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* .nav__block {
+  position: sticky;
+} */
+
+.logo {
+  border-radius: 50px;
+}
 
 /* ..............HERO................ */
 
@@ -51,15 +73,18 @@ body {
   }
 } */
 
-.skills__icons {
+/* .skills__icons {
   
-}
+} */
 
 /* ................CONTACT INFO BLOCK.................... */
 .contact__info__block {
-  background-color: #E7EB5D;
+  /* background-color: #E7EB5D; */
+  background-color: white;
   border-radius: 5px;
   /* margin: 100px 200px 0; */
+  margin-top: 100px;
+  margin-bottom: 200px;
 }
 
 /* .footer li {
@@ -78,4 +103,16 @@ body {
 
 .email {
   font-size: 25px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .email {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .email {
+    font-size: 16px;
+  }
 }
