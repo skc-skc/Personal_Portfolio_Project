@@ -39,9 +39,20 @@ body {
   transform: translateY(-50%);
 }
 
+.mobile__name {
+  /* display: none; */
+}
+
 /* .nav__block {
   position: sticky;
 } */
+
+@media screen and (max-width: 430px) {
+
+  .contact__link {
+    display: none;
+  }
+}
 
 .logo {
   border-radius: 50px;
